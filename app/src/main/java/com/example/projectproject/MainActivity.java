@@ -33,4 +33,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         setContentView(R.layout.internalact3);
     }
+
+    /** Called when the user taps the About Button */
+    public void GoToAbout(View view) {
+        Intent intent = new Intent(this, About.class);
+        startActivity(intent);
+    }
 }
