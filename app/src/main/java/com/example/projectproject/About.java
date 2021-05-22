@@ -13,4 +13,14 @@ public class About extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
     }
+
+    /** Called when the user taps the InfoText */
+    public void LargeZombie(View view) {
+        setContentView(R.layout.activity_about_largezombie);
+    }
+
+    /** Called when the user taps the InfoText */
+    public void SmallZombie(View view) {
+        setContentView(R.layout.activity_about);
+    }
 }
