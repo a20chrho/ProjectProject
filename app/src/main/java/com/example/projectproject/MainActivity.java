@@ -21,19 +21,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /** Called when the user taps the Button2 */
-    public void GoToAct2(View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
-        startActivity(intent);
-    }
-
-    /** Called when the user taps the Button3 */
-    public void GoToInternal3(View view) {
-        Intent intent = new Intent(this, PlanetTemplate.class);
-        startActivity(intent);
-        //setContentView(R.layout.PlanetTemplate);
-    }
-
     /** Called when the user taps the BodiesButton */
     public void GoToBodies(View view) {
         Intent intent = new Intent(this, PlanetTemplate.class);

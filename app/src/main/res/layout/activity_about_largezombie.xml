@@ -30,4 +30,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.027" />
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="207dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Optimized for 768x1280 Design and Programming - a20chrho Concept and Story - Christoffer Holmstrom Based on ”Harmony of the World” by Johannes Kepler. Tanbou the Sun Goddess photos by Hatake  Old book photo is CC, from: https://jooinn.com/old-book-cover.html Harmony of the World excerpt: https://www.globalgreyebooks.com/harmonies-of-the-world-ebook.html Brain-bulb originally by Elisa Riva https://freesvg.org/brain-light-bulb-by-elisa-riva  All planetary information form Wikipedia - the free encyclopedia"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

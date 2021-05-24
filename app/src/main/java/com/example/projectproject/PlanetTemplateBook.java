@@ -1,15 +1,14 @@
 package com.example.projectproject;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.gson.Gson;
 
@@ -18,10 +17,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class PlanetTemplate extends AppCompatActivity {
+public class PlanetTemplateBook extends AppCompatActivity {
 
     //Private members
     private CBodies[] bodies;
@@ -33,42 +31,43 @@ public class PlanetTemplate extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    /** Click to Open the book */
-//    public void OpenBook(View view) {
-//        setContentView(R.layout.activity_planet_template);
-//    }
-//
-//    /** Click to Close the book */
-//    public void CloseBook(View view) {
-//        setContentView(R.layout.activity_planet_template_book);
-//    }
-//
-//    /** Click to Open the Notes */
-//    public void OpenNotes(View view) {
-//        setContentView(R.layout.activity_planet_template_notes);
-//    }
-
-    public static String convertStreamtoString(InputStream is) throws Exception {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
-        StringBuilder sb = new StringBuilder();
-        String line = null;
-        while ((line = reader.readLine()) != null) {
-            sb.append(line).append("\n");
-        }
-        reader.close();
-        return sb.toString();
+    /** Click to Open the book */
+    public void OpenBook(View view) {
+        Intent intent = new Intent(this, PlanetTemplate.class);
+        startActivity(intent);
     }
 
-    @SuppressWarnings("SameParameterValue")
-    private String readFile(String fileName) {
-        try {
-            //noinspection CharsetObjectCanBeUsed
-            return new Scanner(getApplicationContext().getAssets().open(fileName), Charset.forName("UTF-8").name()).useDelimiter("\\A").next();
-        } catch (IOException e) {
-            Log.e("MainActivity ==>", "Could not read file: " + fileName);
-            return null;
-        }
+    /** Click to Close the book */
+    public void CloseBook(View view) {
+        setContentView(R.layout.activity_planet_template_book);
     }
+
+    /** Click to Open the Notes */
+    public void OpenNotes(View view) {
+        setContentView(R.layout.activity_planet_template_book);
+    }
+
+//    public static String convertStreamtoString(InputStream is) throws Exception {
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+//        StringBuilder sb = new StringBuilder();
+//        String line = null;
+//        while ((line = reader.readLine()) != null) {
+//            sb.append(line).append("\n");
+//        }
+//        reader.close();
+//        return sb.toString();
+//    }
+//
+//    @SuppressWarnings("SameParameterValue")
+//    private String readFile(String fileName) {
+//        try {
+//            //noinspection CharsetObjectCanBeUsed
+//            return new Scanner(getApplicationContext().getAssets().open(fileName), Charset.forName("UTF-8").name()).useDelimiter("\\A").next();
+//        } catch (IOException e) {
+//            Log.e("MainActivity ==>", "Could not read file: " + fileName);
+//            return null;
+//        }
+//    }
 
 
     // Global Variables
@@ -77,25 +76,25 @@ public class PlanetTemplate extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_planet_template);
+        setContentView(R.layout.activity_planet_template_book);
 
 //        new JsonTask().execute("https://wwwlab.iit.his.se/brom/kurser/mobilprog/dbservice/admin/getdataasjson.php?type=a20chrho");
 
-        try {
+//        try {
             //
             //
-            String s = readFile("bodies.json");
-            Gson gson = new Gson();
-            bodies = gson.fromJson(s,CBodies[].class);
-            for (int i = 0; i < bodies.length; i++) {
-               Log.d("Main Activity ==>", "hittade himlakroppar: "+bodies[i]);
-            }
-
-            //arrays n stuff
-
-            adapter = new ArrayAdapter<>(this,R.layout.itemtv,R.id.itemtv,bodies);
-            ListView listView = findViewById(R.id.list_view);
-            listView.setAdapter(adapter);
+//            String s = readFile("bodies.json");
+//            Gson gson = new Gson();
+//            bodies = gson.fromJson(s,CBodies[].class);
+//            for (int i = 0; i < bodies.length; i++) {
+//               Log.d("Main Activity ==>", "hittade himlakroppar: "+bodies[i]);
+//            }
+//
+//            //arrays n stuff
+//
+//            adapter = new ArrayAdapter<>(this,R.layout.itemtv,R.id.itemtv,bodies);
+//            ListView listView = findViewById(R.id.list_view);
+//            listView.setAdapter(adapter);
 //            result.setText("\t" + bodies[2].getGravity());
 
 //            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -105,9 +104,9 @@ public class PlanetTemplate extends AppCompatActivity {
 //                }
 //            });
 
-        } catch (Exception e) {
-            Log.e("MainActivity==>", "Something went wrong when reading textfile: \n\n"+ e.getMessage());
-        }
+//        } catch (Exception e) {
+//            Log.e("MainActivity==>", "Something went wrong when reading textfile: \n\n"+ e.getMessage());
+//        }
 
 
     }
