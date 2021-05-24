@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
     /** Called when the user taps the Button3 */
     public void GoToInternal3(View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, PlanetTemplate.class);
         startActivity(intent);
-        setContentView(R.layout.internalact3);
+        //setContentView(R.layout.PlanetTemplate);
     }
 
     /** Called when the user taps the About Button */
