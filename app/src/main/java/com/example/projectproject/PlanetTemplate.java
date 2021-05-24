@@ -2,6 +2,7 @@ package com.example.projectproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -25,6 +26,12 @@ public class PlanetTemplate extends AppCompatActivity {
     //Private members
     private CBodies[] bodies;
     ArrayAdapter<CBodies> adapter;
+
+    /** Called when the user taps the About Button */
+    public void GoToMain(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
     public static String convertStreamtoString(InputStream is) throws Exception {
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
@@ -51,13 +58,6 @@ public class PlanetTemplate extends AppCompatActivity {
 
     // Global Variables
     TextView result;
-    Button buttdec;
-    Button buttinc;
-    TextView numtext;
-    static int counter = 1;
-    String stringVal;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,37 +65,6 @@ public class PlanetTemplate extends AppCompatActivity {
         setContentView(R.layout.activity_planet_template);
 
 //        new JsonTask().execute("https://wwwlab.iit.his.se/brom/kurser/mobilprog/dbservice/admin/getdataasjson.php?type=a20chrho");
-
-        result = (TextView) findViewById(R.id.tvresult);
-        buttdec = (Button) findViewById(R.id.buttdec);
-        buttinc = (Button) findViewById(R.id.buttinc);
-        numtext = (TextView) findViewById(R.id.numtext);
-
-        buttdec.setOnClickListener(new View.OnClickListener() {
-
-            //            @Override
-            public void onClick(View v) {
-                counter--;
-                stringVal = Integer.toString(counter);
-                numtext.setText(stringVal);
-                // result.setText("\t" + bodies[counter].getFeet());
-//                ((MyApplication)getApplication()).doSomething();
-//                result.setText("up");
-            }
-        });
-
-        buttinc.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                counter++;
-                stringVal = Integer.toString(counter);
-                numtext.setText(stringVal);
-                result.setText("down");
-            }
-        });
-
-
 
         try {
             //
@@ -124,7 +93,6 @@ public class PlanetTemplate extends AppCompatActivity {
         } catch (Exception e) {
             Log.e("MainActivity==>", "Something went wrong when reading textfile: \n\n"+ e.getMessage());
         }
-
 
 
     }

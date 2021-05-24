@@ -11,9 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectProject">
-        <activity android:name=".Bodies"></activity>
-        <activity android:name=".PlanetTemplate">
-
+        <activity android:name=".PlanetTemplate"
+            android:theme="@style/NoTitleTheme">
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
