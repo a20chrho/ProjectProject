@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -33,10 +34,13 @@ public class PlanetTemplate extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    /** Click to Open the book */
-//    public void OpenBook(View view) {
-//        setContentView(R.layout.activity_planet_template);
-//    }
+    /** Click to Open the book */
+    public void OpenBook(View view) {
+        setContentView(R.layout.activity_planet_template);
+        adapter = new ArrayAdapter<>(this,R.layout.itemtv,R.id.itemtv,bodies);
+        ListView listView = findViewById(R.id.list_view);
+        listView.setAdapter(adapter);
+    }
 //
 //    /** Click to Close the book */
 //    public void CloseBook(View view) {
@@ -77,7 +81,7 @@ public class PlanetTemplate extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_planet_template);
+        setContentView(R.layout.activity_planet_template_book);
 
 //        new JsonTask().execute("https://wwwlab.iit.his.se/brom/kurser/mobilprog/dbservice/admin/getdataasjson.php?type=a20chrho");
 
