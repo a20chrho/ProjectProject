@@ -4,152 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F663D6"
-    tools:context=".MainActivity">
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="189dp"
-        android:layout_height="106dp"
-        android:layout_marginTop="16dp"
-        android:background="#000000"
-        android:foregroundGravity="center"
-        app:cardBackgroundColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gravity" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginLeft="136dp"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginRight="136dp"
-        android:onClick="GoToAct1"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="MERCURY"
-        android:textColor="#FFFFFF"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/gravity_label"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="57dp"
-        android:layout_marginRight="57dp"
-        android:gravity="right"
-        android:text="Gravity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/zombie" />
-
-    <TextView
-        android:id="@+id/gravity_label"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:gravity="center"
-        android:text="Volume"
-        app:layout_constraintStart_toEndOf="@+id/Radius_label"
-        app:layout_constraintTop_toBottomOf="@+id/zombie" />
-
-    <TextView
-        android:id="@+id/gravity"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="57dp"
-        android:layout_marginRight="57dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="right"
-        android:text="Gravity"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gravity_label" />
-
-    <TextView
-        android:id="@+id/volume"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="center"
-        android:text="Volume"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toEndOf="@+id/radius"
-        app:layout_constraintTop_toBottomOf="@+id/gravity_label" />
-
-    <TextView
-        android:id="@+id/radius"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="57dp"
-        android:layout_marginLeft="57dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Radius"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Radius_label" />
-
-    <TextView
-        android:id="@+id/Radius_label"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="57dp"
-        android:layout_marginLeft="57dp"
-        android:layout_marginTop="10dp"
-        android:text="Radius"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/zombie" />
-
-    <TextView
-        android:id="@+id/zombie"
-        android:layout_width="327dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginRight="152dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:text="”The most dynamic and diverse zombie population. All of the zombie types that we know of seems to be present.”"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+    tools:context=".PlanetTemplate">
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="277dp"
-        android:layout_height="154dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="center_horizontal"
-        android:text="”Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to the Greek god Hermes.”"
-        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="253dp"
+        android:layout_marginRight="253dp"
+        android:text="REMOTE FILE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="351dp"
+        android:layout_height="261dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="196dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/numtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="29dp"
+        android:text="num"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/buttinc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="20dp"
+        android:text="IncreaseNum"
+        app:layout_constraintStart_toEndOf="@+id/tvResult"
+        app:layout_constraintTop_toBottomOf="@+id/numtext" />
+
+    <Button
+        android:id="@+id/buttdec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="DECREASENUM"
+        app:layout_constraintEnd_toStartOf="@+id/buttinc"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult" />
 </androidx.constraintlayout.widget.ConstraintLayout>

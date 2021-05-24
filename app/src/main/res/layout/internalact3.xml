@@ -17,11 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="157dp">
 
-        <ImageView
-            android:id="@+id/description"
-            android:layout_width="264dp"
-            android:layout_height="273dp"
-            app:srcCompat="@drawable/uranus" />
     </androidx.cardview.widget.CardView>
 
     <Button

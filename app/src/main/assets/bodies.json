@@ -1,0 +1,113 @@
+[
+  {
+    "ID": "cb00",
+    "name": "SUN",
+    "type": "a20chrho",
+    "company": "",
+    "location": "274.0 m/s2",
+    "category": "",
+    "size": 695508,
+    "cost": 1409300000,
+    "auxdata": {"description":"The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as visible light and infrared radiation. It is by far the most important source of energy for life on Earth. Its diameter is about 1.39 million kilometres (864,000 miles), or 109 times that of Earth. Its mass is about 330,000 times that of Earth; it accounts for about 99.86% of the total mass of the Solar System.",
+      "zombiepopulation": "This celestial body is the center of our galaxy and the home of the cutest zombie of them all - the zombie godess Tanbou. From her tropical fortress of love she transmits rays of passion that returns the brain waves of every life form that it reaches. The zombie godess spends her daily life delivering a message of peace and prosperity and at night she dreams of the day when she will give birth to a couple of cute twin baby stars…"}
+  },
+  {
+    "ID": "cb01",
+    "name": "MERCURY",
+    "type": "a20chrho",
+    "company": "",
+    "location": "3.70 m/s2",
+    "category": "",
+    "size": 2439,
+    "cost": 61,
+    "auxdata": {"description":"Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to the Greek god Hermes.",
+      "zombiepopulation": "The most dynamic and diverse zombie population. All of the zombie types that we know of seems to be present."}
+  },
+  {
+    "ID": "cb02",
+    "name": "VENUS",
+    "type": "a20chrho",
+    "company": "",
+    "location": "8.87 m/s2",
+    "category": "",
+    "size": 6052,
+    "cost": 928,
+    "auxdata": {"description":"Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
+      "zombiepopulation": "High-energy zombies live here in what seems to be peace and love."}
+  },
+  {
+    "ID": "cb03",
+    "name": "EARTH",
+    "type": "a20chrho",
+    "company": "",
+    "location": "9.80 m/s2",
+    "category": "",
+    "size": 6371,
+    "cost": 1083,
+    "auxdata": {"description":"Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other freshwater, which together constitute the hydrosphere.",
+      "zombiepopulation": "A desolated Zombie population that moves between misery and famine."}
+  },
+  {
+    "ID": "cb04",
+    "name": "MARS",
+    "type": "a20chrho",
+    "company": "",
+    "location": "3.71 m/s2",
+    "category": "",
+    "size": 3389,
+    "cost": 163,
+    "auxdata": {"description":"Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the 'Red Planet'.",
+      "zombiepopulation": "A dynamic Zombie population that always seems to be near and moves across large areas."}
+  },
+  {
+    "ID": "cb05",
+    "name": "JUPITER",
+    "type": "a20chrho",
+    "company": "",
+    "location": "25 m/s2",
+    "category": "",
+    "size": 69911,
+    "cost": 1431280,
+    "auxdata": {"description":"Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass (more than) two and a half times that of all the other planets in the Solar System combined, but (a little) less than one-thousandth the mass of the Sun. Jupiter is the third-brightest natural object in the Earth's night sky after the Moon and Venus. It has been observed since pre-historic times and is named after the Roman god Jupiter, the king of the gods, because of its massive size.",
+      "zombiepopulation": "The biggest zombie population of all. Similar to Saturn’s zombies and population but bigger and grander."}
+  },
+  {
+    "ID": "cb06",
+    "name": "SATURN",
+    "type": "a20chrho",
+    "company": "",
+    "location": "10.44 m/s2",
+    "category": "",
+    "size": 58232,
+    "cost": 827,
+    "auxdata": {"description":"Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.[20][21] It only has one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive.",
+      "zombiepopulation": "Big zombie population that grows and shrinks like the tide."}
+  },
+  {
+    "ID": "cb07",
+    "name": "URANUS",
+    "type": "a20chrho",
+    "company": "",
+    "location": "8.87 m/s2",
+    "category": "",
+    "size": 25362,
+    "cost": 68340,
+    "auxdata": {
+      "description":"Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn). It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
+      "zombiepopulation": "Planet is too far away - Zombie population Unknown."}
+  },
+  {
+    "ID": "cb08",
+    "name": "NEPTUNE",
+    "type": "a20chrho",
+    "company": "",
+    "location": "11.15 m/s2",
+    "category": "",
+    "size": 24622,
+    "cost": 62540,
+    "auxdata": {
+      "description": "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, slightly more massive than its near-twin Uranus.",
+      "zombiepopulation": "Planet is too far away - Zombie population Unknown."
+    }
+  }
+]
