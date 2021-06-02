@@ -51,6 +51,7 @@ public class PlanetTemplate extends AppCompatActivity {
         listView = findViewById(R.id.planet_list_view);
         new JsonTask().execute("https://wwwlab.iit.his.se/brom/kurser/mobilprog/dbservice/admin/getdataasjson.php?type=a20chrho");
 
+
         adapter = new ArrayAdapter<CBodies>(PlanetTemplate.this, R.layout.itemtv,cbodies);
 
         listView.setAdapter(adapter);
