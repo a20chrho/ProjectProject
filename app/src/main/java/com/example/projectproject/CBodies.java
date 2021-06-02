@@ -15,6 +15,11 @@ public class CBodies {
     private String volume;
     private Auxdata auxdata;
 
+    @Override
+    public String toString() { return name+"\n\n"+"Description: "+auxdata.getDescription()+"\n\n"+
+            "volume: "+volume+"km3\nradius: "+radius+"km,\ngravity: "+gravity+"\n\n"
+            +"Zombie population: "+auxdata.getZombie()+".\n";}
+
     public String getId() {
         return id;
     }
@@ -38,9 +43,4 @@ public class CBodies {
         return auxdata;
     }
 
-    @Override
-    public String toString() { return name+"\n\n"+"Description: "+auxdata.getDescription()+"\n\n"+
-            "volume: "+volume+"km3\nradius: "+radius+"km,\ngravity: "+gravity+"\n\n"
-        +"Zombie population: "+auxdata.getZombie()+".\n";}
 }
-

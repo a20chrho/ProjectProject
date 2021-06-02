@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/gravity_label"
+        android:id="@+id/gravity_label1"
         android:layout_width="82dp"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/gravity_label" />
 
     <ListView
-        android:id="@+id/list_view"
+        android:id="@+id/planet_list_view"
         android:layout_width="292dp"
         android:layout_height="251dp"
         android:layout_marginTop="59dp"
